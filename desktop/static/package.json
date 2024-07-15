@@ -8,8 +8,8 @@
     "electron-devtools-installer": "^3.2.0",
     "fix-path": "^3.0.0",
     "mkdirp": "^1.0.4",
-    "node-fetch": "^2.6.7",
-    "ws": "^8.13.0",
+    "node-fetch": "^2.6.8",
+    "ws": "^8.17.1",
     "xdg-basedir": "^4.0.0",
     "yargs": "^17.7.2"
   },
