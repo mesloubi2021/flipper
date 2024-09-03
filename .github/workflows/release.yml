@@ -224,37 +224,37 @@ jobs:
         ref: ${{ needs.release.outputs.tag }}
     - name: Download Mac
       if: ${{ needs.release.outputs.tag != '' }}
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: 'Flipper-mac.dmg'
         path: 'Flipper-mac.dmg'
     - name: Download Flipper Server x86-64
       if: ${{ needs.release.outputs.tag != '' }}
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: 'Flipper-server-mac-x64.dmg'
         path: 'Flipper-server-mac-x64.dmg'
     - name: Download Flipper Server aarch64
       if: ${{ needs.release.outputs.tag != '' }}
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: 'Flipper-server-mac-aarch64.dmg'
         path: 'Flipper-server-mac-aarch64.dmg'
     - name: Download Linux
       if: ${{ needs.release.outputs.tag != '' }}
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: 'Flipper-linux.zip'
         path: 'Flipper-linux.zip'
     - name: Download Windows
       if: ${{ needs.release.outputs.tag != '' }}
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: 'Flipper-win.zip'
         path: 'Flipper-win.zip'
     - name: Download Flipper Server
       if: ${{ needs.release.outputs.tag != '' }}
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: 'flipper-server.tgz'
         path: 'flipper-server.tgz'
